@@ -3,7 +3,6 @@ import React from "react";
 function VideoElement({ currentVideo, autoPlay, muted, onClick, videoRef }) {
   return (
     <video
-      poster={currentVideo?.thumb}
       autoPlay={autoPlay}
       muted={muted}
       src={currentVideo?.sources[0]}
