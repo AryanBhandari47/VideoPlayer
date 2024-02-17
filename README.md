@@ -1,4 +1,4 @@
-# Rigi - Assignment
+# [Rigi - Assignment](https://rigi-assignment-opal.vercel.app/)
 
 Custom video player using Next.js and Tailwindcss.
 [Visit Hosted Version][vercel]
@@ -33,7 +33,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Features included
 
-### Video Element (Full Custom Made)
+### Video Element (Fully Custom Made)
 
 1. Play/Pause toggle.
 2. Seek functionality.
@@ -42,7 +42,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 5. Speed selector for playback speed adjustment.
 6. Added features such as fullscreen mode, volume control, thumbnail previews (on holding mouse over timeline)
 
-### Playlist (Library Used )
+### Playlist ([Library Used](https://www.npmjs.com/package/react-beautiful-dnd))
 
 1.  A playlist component to display and manage videos.
 2.  Allows users to reorder videos in the playlist.
