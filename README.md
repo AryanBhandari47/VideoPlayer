@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rigi - Assignment
+
+Custom video player using Next.js and Tailwindcss.
+[Visit Hosted Version][vercel]
+
+[vercel]: https://rigi-assignment-opal.vercel.app/ "Vercel"
+
+## Installation
+
+npm install
 
 ## Getting Started
 
@@ -16,21 +25,32 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Lighthouse Score
 
-To learn more about Next.js, take a look at the following resources:
+![Screenshot 1](/public/assets/screenshots/lighthouseScore.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features included
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Video Element (Full Custom Made)
 
-## Deploy on Vercel
+1. Play/Pause toggle.
+2. Seek functionality.
+3. Timer displaying current playback time and duration.
+4. Autoplay.
+5. Speed selector for playback speed adjustment.
+6. Added features such as fullscreen mode, volume control, thumbnail previews (on holding mouse over timeline)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Playlist (Library Used )
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1.  A playlist component to display and manage videos.
+2.  Allows users to reorder videos in the playlist.
+3.  Clicking on a video in the playlist loads and play that video in the video player.
+4.  Search functionality for the playlist.
+
+### Extras
+
+1. Made the application responsive for various screen sizes.
+2. Added keyboard shortcuts for keyboard warriors. (arrow left, arrow right and spacebar)
+3. Videos continue playing from where users left-off.
