@@ -25,7 +25,7 @@ const Playlist = () => {
     const storeDestinatonIndex = destination.index;
     const [removedStore] = reorderedList.splice(storeSourceIndex, 1);
     reorderedList.splice(storeDestinatonIndex, 0, removedStore);
-    setPlaylist(reorderedList);
+    setFilteredPlaylist(reorderedList);
   };
 
   const handleVideoClick = (video) => {
