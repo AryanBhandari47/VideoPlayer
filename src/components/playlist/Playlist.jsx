@@ -3,7 +3,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { PlayerContext } from "../../Providers/PlayerContext";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
-import { MdDragHandle } from "react-icons/md";
 import SearchPlaylist from "./SearchPlaylist";
 import Image from "next/image";
 

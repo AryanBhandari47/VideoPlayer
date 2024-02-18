@@ -35,6 +35,10 @@ const Player = ({ src, muted = false, autoPlay = true }) => {
   const videoContainerRef = useRef(null);
 
   useEffect(() => {
+    handlePlayPauseIndicator();
+  }, []);
+
+  useEffect(() => {
     if (!videoRef.current) {
       return;
     }
