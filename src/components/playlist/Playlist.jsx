@@ -5,6 +5,7 @@ import { PlayerContext } from "../../Providers/PlayerContext";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { MdDragHandle } from "react-icons/md";
 import SearchPlaylist from "./SearchPlaylist";
+import Image from "next/image";
 
 const Playlist = () => {
   const { playlist, setPlaylist, currentVideo, setCurrentVideo } =
@@ -60,14 +61,25 @@ const Playlist = () => {
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
                       onClick={() => handleVideoClick(video)}
-                      className={`bg-gray-200 group cursor-pointer font-semibold w-full p-2 rounded-lg hover:bg-rigi-purpleLight transition-all
+                      className={`bg-gray-200 relative group cursor-pointer  w-full p-4 rounded-lg hover:bg-rigi-purpleLight transition-all
                      duration-200 ease-in flex items-center justify-between ${
                        video?.thumb === currentVideo?.thumb &&
                        "bg-rigi-purpleLight"
                      }`}
                     >
-                      <p>{video?.title}</p>
-                      <MdDragHandle className="w-5 h-5 hidden group-hover:block" />
+                      <div className="flex flex-col w-2/3 gap-1 font-semibold">
+                        <p>{video?.title}</p>
+                        <p className="line-clamp-1 font-normal text-wrap text-sm">
+                          {video.description}
+                        </p>
+                      </div>
+                      <Image
+                        src={video.thumb}
+                        alt={video.title}
+                        width={100}
+                        height={100}
+                      />
+                      {/* <MdDragHandle className="w-5 h-5 absolute right-3 top-1/2 -translate-y-1/2 hidden group-hover:block" /> */}
                     </div>
                   )}
                 </Draggable>
