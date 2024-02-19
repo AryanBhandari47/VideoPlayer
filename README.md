@@ -1,9 +1,9 @@
-# [Video Player](https://rigi-assignment-opal.vercel.app/)
+# [Video Player](https://video-player-eosin.vercel.app/)
 
 Built In House video player using Next.js and Tailwindcss.
 [Visit Hosted Version][vercel]
 
-[vercel]: https://rigi-assignment-opal.vercel.app/ "Vercel"
+[vercel]: https://video-player-eosin.vercel.app/ "Vercel"
 
 ## Installation
 
