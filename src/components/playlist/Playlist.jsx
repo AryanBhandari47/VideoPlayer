@@ -42,9 +42,9 @@ const Playlist = () => {
       <SearchPlaylist setFilteredPlaylist={setFilteredPlaylist} />
       <DragDropContext onDragEnd={handleDragEnd}>
         <Droppable droppableId="playlist">
-          {(provided) => (
+          {(provided, snapshot) => (
             <div
-              className="flex flex-col w-full gap-2 my-6"
+              className={`flex flex-col w-full gap-2 my-6 `}
               {...provided.droppableProps}
               ref={provided.innerRef}
             >
@@ -54,13 +54,15 @@ const Playlist = () => {
                   draggableId={`${video?.title}`}
                   index={index}
                 >
-                  {(provided) => (
+                  {(provided, snapshot) => (
                     <div
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
                       onClick={() => handleVideoClick(video)}
-                      className={`bg-gray-200 relative group cursor-pointer  w-full p-4 rounded-lg hover:bg-rigi-purpleLight transition-all
+                      className={`${
+                        snapshot.isDragging && "border-4 border-rigi-purpleDark"
+                      } bg-gray-200 relative group cursor-pointer  w-full p-4 rounded-lg hover:bg-rigi-purpleLight transition-all
                      duration-200 ease-in flex items-center justify-between ${
                        video?.thumb === currentVideo?.thumb &&
                        "bg-rigi-purpleLight"

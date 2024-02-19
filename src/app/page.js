@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-black/95 w-full h-full">
+    <div className="bg-black/95 w-full min-h-screen">
       <main className="flex flex-col h-full px-4  items-center justify-center max-w-3xl mx-auto">
         <div className="flex items-center gap-2">
           <Image src={LOGO_URL} width={90} height={90} alt="Rigi Logo" />
