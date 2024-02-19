@@ -1,6 +1,6 @@
-# [Rigi - Assignment](https://rigi-assignment-opal.vercel.app/)
+# [Video Player](https://rigi-assignment-opal.vercel.app/)
 
-Custom video player using Next.js and Tailwindcss.
+Built In House video player using Next.js and Tailwindcss.
 [Visit Hosted Version][vercel]
 
 [vercel]: https://rigi-assignment-opal.vercel.app/ "Vercel"

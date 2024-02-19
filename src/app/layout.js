@@ -5,8 +5,8 @@ import PlayerContext from "@/Providers/PlayerContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Rigi - Assignment",
-  description: "A Video Player",
+  title: "Video Player",
+  description: "A Custom Video Player",
 };
 
 export default function RootLayout({ children }) {
