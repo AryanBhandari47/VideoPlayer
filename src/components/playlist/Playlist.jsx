@@ -16,15 +16,13 @@ const Playlist = () => {
   }, []);
 
   const handleDragEnd = (result) => {
-    const { source, destination, type } = result;
+    const { source, destination } = result;
     if (!destination) return;
 
-    // setCurrentVideo(items[destination.index]);
-    const reorderedList = [...playlist];
-    const storeSourceIndex = source.index;
-    const storeDestinatonIndex = destination.index;
-    const [removedStore] = reorderedList.splice(storeSourceIndex, 1);
-    reorderedList.splice(storeDestinatonIndex, 0, removedStore);
+    const reorderedList = [...filteredPlaylist];
+    const [removedItem] = reorderedList.splice(source.index, 1);
+    reorderedList.splice(destination.index, 0, removedItem);
+
     setFilteredPlaylist(reorderedList);
   };
 
