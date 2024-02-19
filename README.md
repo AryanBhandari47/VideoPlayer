@@ -40,7 +40,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 3. Timer displaying current playback time and duration.
 4. Autoplay.
 5. Speed selector for playback speed adjustment.
-6. Added features such as fullscreen mode, volume control, thumbnail previews (on holding mouse over timeline)
+6. Added features such as fullscreen mode, volume control, thumbnail previews
+7. Video Preview on holding mouse over timeline.
 
 ### Playlist ([Library Used](https://www.npmjs.com/package/react-beautiful-dnd))
 

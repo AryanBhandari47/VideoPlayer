@@ -250,6 +250,8 @@ const Player = ({ src, muted = false, autoPlay = true }) => {
     setIsHovering(true);
   };
 
+  console.log(clickedPosition);
+
   return (
     <div
       ref={videoContainerRef}
